@@ -8,7 +8,7 @@ export default defineConfig({
     alias: [
       {
         find: /^@\/(.*)$/,
-        replacement: '~/src/$1',
+        replacement: '/src/$1',
       },
     ],
   },
