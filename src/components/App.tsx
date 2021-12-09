@@ -1,3 +1,3 @@
-import "@/assets/css/App.scss";
+import '@/assets/css/App.scss'
 
-export const App: React.FC = () => <div></div>;
+export const App: React.FC = () => <div></div>
