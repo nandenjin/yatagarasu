@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { GoogleAuthProvider } from 'firebase/auth'
 
 export enum AuthStatus {
   LOADING,
@@ -52,3 +53,6 @@ export const authSlice = createSlice({
 })
 
 export const authReducer = authSlice.reducer
+
+export const provider = new GoogleAuthProvider()
+provider.addScope('https://www.googleapis.com/auth/tasks')

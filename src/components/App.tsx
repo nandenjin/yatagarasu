@@ -1,9 +1,8 @@
 import '@/assets/css/App.scss'
 import { useAppSelector } from '@/hooks'
-import { AuthStatus } from '@/store/auth'
+import { AuthStatus, provider } from '@/store/auth'
 import {
   getAuth,
-  GoogleAuthProvider,
   signInWithPopup,
   signOut as signOutFirebase,
 } from 'firebase/auth'
@@ -11,7 +10,7 @@ import {
 export const App: React.FC = () => {
   const auth = getAuth()
   const signIn = () => {
-    signInWithPopup(auth, new GoogleAuthProvider())
+    signInWithPopup(auth, provider)
   }
   const signOut = () => {
     signOutFirebase(auth)
