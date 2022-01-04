@@ -33,6 +33,9 @@
     "typescript": "4.5.4",
     "vite": "2.7.10"
   },
+  "resolutions": {
+    "@types/react": "17.0.38"
+  },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --cache --fix",
     "*.{ts,tsx,scss,md,json,yml,yaml}": "prettier --write"
