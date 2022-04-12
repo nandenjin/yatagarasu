@@ -19,7 +19,7 @@
     "react-redux": "7.2.8"
   },
   "devDependencies": {
-    "@types/react": "18.0.2",
+    "@types/react": "18.0.3",
     "@types/react-dom": "18.0.0",
     "@typescript-eslint/eslint-plugin": "5.19.0",
     "@typescript-eslint/parser": "5.19.0",
@@ -34,7 +34,7 @@
     "vite": "2.9.1"
   },
   "resolutions": {
-    "@types/react": "18.0.2"
+    "@types/react": "18.0.3"
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint --cache --fix",
